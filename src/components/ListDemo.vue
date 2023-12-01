@@ -1,7 +1,4 @@
-<template>
-    <!-- <p>列表渲染</p> -->
-    <!-- <p v-for="item in name">{{ item }}</p> -->
-    
+<template>    
     <p v-for="(items,key,index) in test.names">{{ items }}</p>
     
 </template>
