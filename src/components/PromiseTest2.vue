@@ -22,18 +22,29 @@
         
         methods:{
            drive(){
-            setTimeout(() => {
-                
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("我在开车呢")
             }, 2000);
+                
+            })
+           
            },
            shopping(){
-            setTimeout(() => {
-                fn();
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("我逛商场")
             }, 1000);
+                
+            })
+           
            },
            fun(){
-            this.drive(()=>{
-                console.log("正在开车")
+            this.drive().then((data)=>{
+                console.log(data)
+                return this.shopping()
+            }).then((data)=>{
+                console.log(data)
             })
            }
         }
