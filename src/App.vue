@@ -6,7 +6,6 @@ import EventDemo1 from './components/EventDemo1.vue'
 import EventDemo2 from './components/EventDemo2.vue'
 import EventDemo3 from './components/EventDemo3.vue'
 import ArrayList from './components/ArrayList.vue'
-import WatchDemo from './components/WatchDemo.vue'
 import ModelDemo from './components/ModelDemo.vue'
 import refDemo from './components/refDemo.vue'
 
@@ -17,17 +16,12 @@ import refDemo from './components/refDemo.vue'
           
         };
     },
-    components: { refDemo,ListDemo,EventDemo1,EventDemo2,EventDemo3,ArrayList,PromiseTest1,PromiseTest2,WatchDemo,ModelDemo}
+    components: { refDemo,ListDemo,EventDemo1,EventDemo2,EventDemo3,ArrayList,PromiseTest1,PromiseTest2,ModelDemo}
 } 
 </script>
 
 <template>
-    <refDemo />
-    <!-- <ModelDemo /> -->
-    <!-- <ifDemo /> -->
-    <!-- <h v-html="rawHTML"></h> -->
-    <!-- <EventDemo1/> -->
-    <!-- <ListDemo /> -->
+    <ListDemo/>
     <!-- <EventDemo2 /> -->
     <!-- <EventDemo3 /> -->
     <!-- <ArrayList /> -->
